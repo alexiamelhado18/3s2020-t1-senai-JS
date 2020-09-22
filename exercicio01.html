@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <script>
+
+        // variavel onde recebe seu valor pela caixa de texto prompt 
+        var number = prompt("Digite um número");
+
+        // verificação onde se o valor for nulo mostra um alert informando  
+        function numberDigitado() {
+
+            if (number != null) {
+                alert(number);
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <!-- chamando a function no input pelo onclick  -->
+    <input type="button" onclick="numberDigitado()" value="Ver número digitado" />
+</body>
+
+</html>

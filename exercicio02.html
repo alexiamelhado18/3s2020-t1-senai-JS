@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <script>
+
+        // variavel onde recebe seu valor pela caixa de texto prompt 
+        var metros = prompt("Digite um valor de metros para ser convertido em centímetro");
+        var centimetros = 0;
+ 
+        function conversaoMetros() {
+            
+            centimetros = metros * 100;
+            alert(centimetros + "cm");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <!-- chamando a function no input pelo onclick  -->
+    <input type="button" onclick="conversaoMetros()" value="Ver conversão" />
+</body>
+
+</html>
