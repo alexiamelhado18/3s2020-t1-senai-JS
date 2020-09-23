@@ -1,0 +1,33 @@
+<!-- 7. Faça um Programa que peça a temperatura
+ em graus Celsius, transforme e mostre em graus Farenheit. Fórmula : Farenheit
+= Celsius × 1,8 + 32 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 07</title>
+        <script>
+    
+            // variavel onde recebe seu valor pela caixa de texto prompt 
+            var celsius = prompt("Insira a temperatura em graus Celsius:");
+    
+            function transformarFarenheit() {
+    
+                var farenheit = (parseFloat(celsius)) + 1.8 + 32;
+    
+                alert("A temperatura em Farenheit é: " + farenheit + "°F");
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1>JavaScript</h1>
+    
+        <!-- chamando a function no input pelo onclick  -->
+        <input type="button" onclick="transformarFarenheit()" value="Ver temperatura em Farenheit" />
+    </body>
+
+</html>

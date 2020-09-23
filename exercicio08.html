@@ -1,0 +1,42 @@
+<!-- 8. Faça um Programa que peça o valor da gasolina e do álcool de um posto e diga qual é o combustível mais vantajoso
+abastecer, sabendo que somente é vantagem abastecer álcool se o preço do mesmo é menor ou igual a 70% do valor da
+gasolina. -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+    <script>
+
+        function posto() {
+
+            // variavel onde recebe seu valor pela caixa de texto prompt 
+            var gasolina = prompt("Insira o valor da gasolina:");
+            var alcool = prompt("Insira o valor do álcool:");
+
+            // conta onde o alcool pega o valor da gasolina e multiplica por 70%
+            // Fazendo que o álcool fique na vantagem
+            var vantagem = (parseFloat(alcool));
+            vantagem = (parseFloat(gasolina)) * 0.7;
+
+            if (vantagem <= gasolina) {
+
+                document.getElementById("demo").innerHTML = "A vantagem é do álcool";
+
+            } else { document.getElementById("demo").innerHTML = "A vantagem é da gasolina"; }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <!-- chamando a function no input pelo onclick  -->
+    <input type="button" onclick="posto()" value="Ver qual combustível é vantajoso" />
+    <p id="demo"></p>
+</body>
+
+</html>

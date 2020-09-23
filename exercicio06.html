@@ -1,0 +1,42 @@
+<!-- 6. Faça um Programa que peça as 4 notas bimestrais e mostre a média. -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+
+        function mediaNota() {
+
+            // variavel onde recebe seu valor pela caixa de texto prompt 
+            var nota1 = prompt("Insira a sua 1º nota bimestral:");
+            var nota2 = prompt("Insira a sua 2º nota bimestral:");
+            var nota3 = prompt("Insira a sua 3º nota bimestral:");
+            var nota4 = prompt("Insira a sua 4º nota bimestral:");
+
+            var media = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3) + parseInt(nota4)) / 4;
+
+            var resultado;
+
+            if (media >= 7) {
+
+                resultado = "Aprovado";
+
+            } else { resultado = "Reprovado"; }
+
+            alert("Sua média escolar é: " + media + ". E está " + resultado);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <!-- chamando a function no input pelo onclick  -->
+    <input type="button" onclick="mediaNota()" value="Calculo média escolar" />
+</body>
+
+</html>

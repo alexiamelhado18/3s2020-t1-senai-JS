@@ -1,3 +1,5 @@
+<!-- 4. Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. Fórmula: Area = pi * raio² -->
+
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -14,8 +16,9 @@
 
         function calculoPi() {
 
-            // var area = raio/2
-            
+            var area = pi * (raio * raio);
+            alert("Sua área é: " + area);
+
 
         }
     </script>
@@ -25,7 +28,7 @@
     <h1>JavaScript</h1>
 
     <!-- chamando a function no input pelo onclick  -->
-    <input type="button" onclick="conersaoCentimetros()" value="Ver conversão" />
+    <input type="button" onclick="calculoPi()" value="Ver sua área" />
 </body>
 
 </html>

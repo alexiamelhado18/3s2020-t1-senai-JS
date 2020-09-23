@@ -1,0 +1,32 @@
+<!-- 5. Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
+Fórmula: Celsius = (5 * (Farenheit -32) / 9). -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <script>
+
+        // variavel onde recebe seu valor pela caixa de texto prompt 
+        var farenheit = prompt("Insira a temperatura em graus Farenheit:");
+
+        function transformarCelsius() {
+
+            var celsius = (5 * (farenheit - 32) /9);
+
+            alert("A temperatura em Celsius é: " + celsius + "°C");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <!-- chamando a function no input pelo onclick  -->
+    <input type="button" onclick="transformarCelsius()" value="Ver temperatura em Celsius" />
+</body>
+
+</html>
